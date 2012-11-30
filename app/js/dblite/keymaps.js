@@ -1,0 +1,60 @@
+Ext.onReady(function() {
+	var map = new Ext.KeyMap(document, [{
+				key: Ext.EventObject.F1,
+				handler: Topmenu.showDbliteHelpWindow,
+				stopEvent: true,
+				//scope: this
+    }, {
+				key: Ext.EventObject.F3,
+				handler: Topmenu.showKeyMappingsWindow,
+				stopEvent: true,
+				//scope: this
+    }, {
+				key: Ext.EventObject.F5,
+				handler: Explorer.refreshDatabaseExplorer,
+				stopEvent: true,
+				//scope: this
+    }, {
+    			key: Ext.EventObject.F6,
+				handler: Explorer.alterTableStructure,
+				stopEvent: true,
+				//scope: this
+    }, {
+     			key: Ext.EventObject.F7,
+				handler: Explorer.alterTableIndexes,
+				stopEvent: true,
+				//scope: this
+
+    }, {
+     			key: '1',
+     			ctrl: true,
+				handler: Explorer.showHideDatabaseExplorer,
+				stopEvent: true,
+				//scope: this
+    }, {
+       			key: '2',
+     			ctrl: true,
+				handler:  Dblite.showHideDataPanel,
+				stopEvent: true,
+				//scope: this
+    }, {
+       			key: '3',
+     			ctrl: true,
+				handler:  Dblite.showHideEditorPanel,
+				stopEvent: true,
+				//scope: this
+    }, {
+    		    key: 'D',
+     			ctrl: true,
+				handler:  Explorer.showCreateDBPanel,
+				stopEvent: true,
+				//scope: this
+    }, {
+    		    key: 'S',
+     			ctrl: true,
+				handler: Editor.saveSQLEditor,
+				stopEvent: true,
+				scope: Editor
+    }]);
+});
+

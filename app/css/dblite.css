@@ -1,0 +1,645 @@
+@CHARSET "ISO-8859-1";
+
+.table-structure {
+	font-family: arial,tahoma,helvetica,sans-serif;
+	font-size: 12px;
+}
+
+/* Styles added to format structure tab data on 09/02/10 */
+.table_elem {
+	display: table;
+	width: 100%;
+}
+
+.table_row_elem {
+	display: table-row;
+}
+
+.field {
+	display: table-cell;
+	padding: 2px 50px 2px 0;
+}
+
+.field.header {
+	font-weight: bold;
+	font-size: 13px;
+	border-bottom: 1px solid gray;
+}
+
+.clear {
+	clear: both;
+}
+
+.side_heading {
+	border-bottom: 1px dashed gray;
+	padding: 2px;
+	margin-bottom: 12px;
+	display: table;
+}
+
+.ddl_sql {
+	margin-bottom: 25px;
+}
+/* end - styles added to format structure tab data */
+
+/* Added on 08/03/10 for icons */
+.register {
+	background-image:url(../images/icons/user_add.png) !important;
+}
+
+.login {
+	background-image:url(../images/icons/user_go.png) !important;
+}
+
+.logout {
+	background-image:url(../images/icons/user-logout.gif) !important;
+}
+
+.add {
+	background-image:url(../images/icons/table_row_insert.png) !important;
+}
+.save {
+	background-image:url(../images/icons/table_save.png) !important;
+}
+.remove {
+	background-image:url(../images/icons/table_row_delete.png) !important;
+}
+.cancel {
+	background-image:url(../images/icons/table_lightning.png) !important;
+}
+
+.add_server {
+	background-image:url(../images/icons/server_add.png) !important;
+}
+
+.edit_server {
+	background-image:url(../images/icons/server_edit.png) !important;
+}
+
+.connect {
+	background-image:url(../images/icons/connect.png) !important;
+}
+
+.x-tool-execute {
+    background-image: url(../images/icons/play_normal_icon.png);
+    padding: 2px;
+}
+
+.x-tool-page_save {
+/*
+	background-image: url(../images/icons/page_save.png);
+*/
+	background-image: url(../images/icons/save-two-16.png) !important;
+	padding: 2px;
+}
+
+.x-tool-page_save_as {
+    background-image: url(../images/icons/page_go.png);
+    padding: 2px;
+}
+
+.x-tool-page_add {
+    background-image: url(../images/icons/page_add.png);
+    padding: 2px;
+
+}
+
+.x-tool-page_delete {
+    background-image: url(../images/icons/page_delete.png);
+    padding: 2px;
+}
+
+.page_leaf {
+/*
+    background-image: url(../images/icons/page.png) !important;
+*/
+	background-image: url(../images/icons/document-16.png) !important;
+
+}
+
+.folder_page {
+	background-image: url(../images/icons/folder-16.png) !important;
+}
+/* End - Added on 08/03/10 for icons */
+
+.page_delete {
+/*
+    background-image: url(../images/icons/page_delete.png);
+*/
+	background-image: url(../images/icons/document-remove-16.png) !important;
+}
+.folder_delete {
+/*
+    background-image: url(../images/icons/folder_delete.png) !important;
+*/
+	background-image: url(../images/icons/folder-remove-16.png) !important;
+}
+
+.dblite_logo {
+	width: 65px;
+	height: 18px;
+
+	/*background-color: white;*/
+    background-image: url(../images/dblite1.png);
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+.dblite_about_logo {
+	width: 167px;
+	height: 49px;
+
+	/*background-color: white;*/
+    background-image: url(../images/dblite-abt-logo.PNG);
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+.connection {
+	background-image:url(../images/icons/server_database.png) !important;
+}
+
+.database {
+	background-image:url(../images/icons/database.png) !important;
+
+}
+
+.table_group {
+	background-image:url(../images/icons/table_multiple.png) !important;
+}
+
+.table {
+	background-image:url(../images/icons/table.png) !important;
+}
+
+.table_column {
+	background-image:url(../images/icons/text_columns.png) !important;
+}
+
+.primary_column {
+	background-image:url(../images/icons/key.png) !important;
+}
+
+/*
+.table_refresh {
+	background-image:url(../images/icons/table_refresh.png) !important;
+}
+*/
+.create_database {
+	background-image:url(../images/icons/database_add.png) !important;
+}
+
+.delete_database {
+	background-image:url(../images/icons/database_delete.png) !important;
+}
+.refresh_database {
+	background-image:url(../images/icons/database_refresh.png) !important;
+}
+
+.truncate_database {
+	background-image:url(../images/icons/database_edit.png) !important;
+}
+
+.empty_database {
+	background-image:url(../images/icons/database_edit.png) !important;
+}
+
+.create_table {
+	background-image:url(../images/icons/table_add.png) !important;
+}
+
+.copy_database {
+	background-image:url(../images/icons/database_go.png) !important;
+}
+
+.backup_database {
+	background-image:url(../images/icons/database_save.png) !important;
+}
+
+.restore_server {
+	background-image:url(../images/icons/server_lightning.png) !important;
+}
+
+.restore_database {
+	background-image:url(../images/icons/database_lightning.png) !important;
+}
+
+.copy_table {
+	background-image:url(../images/icons/table_go.png) !important;
+}
+
+.alter_table {
+	background-image:url(../images/icons/table_edit.png) !important;
+}
+
+.manage_index {
+	background-image:url(../images/icons/table_key.png) !important;
+}
+
+.relationship_foreignkey {
+	background-image:url(../images/icons/table_relationship.png) !important;
+}
+
+.rename_table {
+	background-image:url(../images/icons/table_edit.png) !important;
+}
+
+.truncate_table {
+	background-image:url(../images/icons/table_edit.png) !important;
+}
+
+.drop_table {
+	background-image:url(../images/icons/table_delete.png) !important;
+}
+
+.reorder_columns {
+	background-image:url(../images/icons/table_sort.png) !important;
+}
+
+.save_modification_alert {
+	color: #CC0000;
+	/*display: none;*/
+}
+
+#reorder_columns_grid .x-panel-header {
+	font-weight: normal !important;
+}
+.view_table_data {
+	background-image:url(../images/icons/eye.png) !important;
+}
+
+.view_table_properties{
+	background-image:url(../images/icons/eye.png) !important;
+}
+
+.duplicate_structure_data {
+	background-image:url(../images/icons/table.png) !important;
+}
+
+#duplicate_table_form #form_options_cont .x-form-item {
+	margin-bottom: 0 !important;
+}
+
+#duplicate_table_form #form_options_cont label,
+#long_text_edit_form label,
+#edit_index_form form label {
+	padding: 0 !important;
+}
+
+#backup_form label, #export_table_form label { padding: 0 !important}
+
+#duplicate_table_grid {
+	margin-top: 1px !important;
+}
+
+.about_dblite {
+    background-image: url(../images/icons/info-16.png) !important;
+}
+
+.dblite_feedback {
+	background-image: url(../images/icons/user_comment.png) !important;
+}
+
+.keyboard_shortcuts {
+    background-image: url(../images/icons/keyboard.png) !important;
+}
+
+.execute_query {
+    background-image: url(../images/icons/play_normal_icon.png) !important;
+}
+
+.execute_row_sql {
+    background-image: url(../images/icons/play_normal_icon.png) !important;
+    height: 16px;
+    width: 16px;
+    text-indent: -2000px;
+}
+
+.query_page_save {
+/*
+	background-image: url(../images/icons/page_save.png) !important;
+	background-image: url(../images/icons/save-two-16.png) !important;
+*/
+	background-image: url(../images/icons/editor_save.png) !important;
+}
+
+.query_page_save_as {
+/*
+	background-image: url(../images/icons/page_go.png) !important;
+	background-image: url(../images/icons/export-16.png) !important;
+*/
+	background-image: url(../images/icons/editor_save_as.png) !important;
+}
+
+.query_page_add {
+/*
+    background-image: url(../images/icons/page_add.png) !important;
+*/
+    background-image: url(../images/icons/document-add-16.png) !important;
+}
+
+.query_page_delete {
+/*
+    background-image: url(../images/icons/page_delete.png) !important;
+	background-image: url(../images/icons/document-remove-16.png) !important;
+*/
+	background-image: url(../images/icons/saved_editor_delete.png) !important;
+}
+
+.browse_query_page {
+/*
+    background-image: url(../images/icons/page_find.png) !important;
+*/
+	 background-image: url(../images/icons/view-16.png) !important;
+}
+#editor_header {
+	color: #15428B;
+	font-family: tahoma, arial, verdana, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.CodeMirror-line-numbers {
+	background-color: #eee;
+	font-size: 9pt;
+	padding: 3px 3px 0px 4px;
+}
+
+#backup_form .x-form-field-wrap {
+	height: 27px !important;
+}
+
+/*
+#ext-comp-1004__editor_add_tool_tab span.x-tab-strip-inner {
+	width: 10px !important;
+}
+*/
+.close_other_tabs {
+	background-image: url(../images/icons/close-16.png) !important;
+}
+
+div.x-tab-strip-wrap .add-tab a span.x-tab-strip-inner {
+    background: url(../images/icons/add.png) no-repeat center center;
+    width: 16px !important;
+}
+
+div.x-tab-strip-wrap .execute-tab a span.x-tab-strip-inner {
+    background: url(../images/icons/play_normal_icon.png) no-repeat center center;
+    width: 16px !important;
+}
+
+.cancel_table_create, .cancel_table_update {
+	background-image: url(../images/icons/decline-16.png) !important;
+}
+
+.add_table_column {
+	background-image: url(../images/icons/table_column_add.png) !important;
+}
+
+.remove_table_column {
+	background-image: url(../images/icons/table_column_delete.png) !important;
+}
+
+#datapanel ul.x-tab-strip-top
+{
+	background-image: none;
+	background-color: #deecfd;
+}
+
+#datapanel .x-tab-panel-header
+{
+	padding-bottom: 0px;
+}
+
+.dbl-subtab .x-tab-strip-top .x-tab-right,
+.dbl-subtab .x-tab-strip-top .x-tab-left,
+.dbl-subtab .x-tab-strip-top .x-tab-strip-inner
+{
+	background-image: none;
+}
+
+.dbl-subtab .x-tab-strip-top,
+{
+	padding: 0px;
+}
+
+#datapanel .x-tab-panel-header
+{
+	border-bottom: none;
+}
+
+.preview_sql {
+	background-image: url(../images/icons/preview-16.png) !important;
+}
+
+.cancel_preview_sql {
+	background-image: url(../images/icons/close-16.png) !important;
+}
+.alter_table_column {
+	background-image:url(../images/icons/pen-16.png) !important;
+}
+
+.drop_column {
+	background-image:url(../images/icons/table_column_delete.png) !important;
+}
+
+.hidden {
+	display: none;
+}
+
+.add_index {
+	background-image: url(../images/icons/add-16.png) !important;
+}
+
+.edit_index {
+	background-image: url(../images/icons/pen-16.png)  !important;
+}
+
+.delete_index {
+	background-image: url(../images/icons/delete-16.png) !important;
+}
+
+.export_table {
+	background-image: url(../images/icons/export-16.png) !important;
+}
+
+.database_view {
+	background-image: url(../images/icons/docuument-16.png) !important;
+}
+.database_procedure {
+	background-image: url(../images/icons/docuument-16.png) !important;
+}
+.database_function {
+	background-image: url(../images/icons/docuument-16.png) !important;
+}
+.page_rename {
+/*
+	background-image: url(../images/icons/page_edit.png) !important;
+*/
+	background-image: url(../images/icons/document-edit-16.png) !important;
+}
+.database_views {
+	background-image: url(../images/icons/folder-16.png) !important;
+}
+
+.stored_procedures {
+	background-image: url(../images/icons/folder-16.png) !important;
+}
+
+.database_functions {
+	background-image: url(../images/icons/folder-16.png) !important;
+}
+.sql_container {
+	background-image: url(../images/icons/folder-16.png) !important;
+}
+
+.table_columns {
+	background-image: url(../images/icons/folder-16.png) !important;
+}
+
+.non_editing_cell {
+	background-color: #fffff0;
+}
+
+.set_as_default_or_null {
+	color: #2b2bcd;
+}
+
+.create_view {
+	background-image: url(../images/icons/document-add-16.png) !important;
+}
+.alter_view {
+	background-image: url(../images/icons/pen-16.png) !important;
+}
+.drop_view {
+	background-image: url(../images/icons/delete-16.png) !important;
+}
+.rename_view {
+	background-image: url(../images/icons/checkmark-16.png) !important;
+}
+.export_view {
+	background-image: url(../images/icons/right-16.png) !important;
+}
+
+.create_procedure {
+	background-image: url(../images/icons/document-add-16.png) !important;
+}
+.alter_procedure {
+	background-image: url(../images/icons/pen-16.png) !important;
+}
+.drop_procedure {
+	background-image: url(../images/icons/delete-16.png) !important;
+}
+
+.create_function {
+	background-image: url(../images/icons/document-add-16.png) !important;
+}
+.alter_function {
+	background-image: url(../images/icons/pen-16.png) !important;
+}
+.drop_function {
+	background-image: url(../images/icons/delete-16.png) !important;
+}
+
+.editPass-disabled {
+	backgroud-color: #deecdf;
+}
+.set_delimiter {
+	background-image: url(../images/icons/window-command-prompt.png) !important;
+}
+
+.hide {
+	display: none;
+}
+
+.empty_cell {
+	background-image: url(../images/icons/table_cel.png) !important;
+}
+
+.null_cell {
+	background-image: url(../images/icons/table_cel.png) !important;
+}
+
+.default_value_cell {
+	background-image: url(../images/icons/table_cel.png) !important;
+}
+
+.add_table_index {
+	background-image: url(../images/icons/key_add.png) !important;
+}
+
+.delete_table_index {
+	background-image: url(../images/icons/key_delete.png) !important;
+}
+
+.alter_table_index {
+	background-image: url(../images/icons/ok-16.png) !important;
+}
+
+.update_table_data {
+	background-image: url(../images/icons/save-two-16.png) !important;
+}
+
+.index_add_cols {
+    background-image: url(../images/icons/pen-16.png) !important;
+    height: 16px;
+    width: 16px;
+    text-indent: -2000px;
+}
+
+#manage_index_grid .x-grid3-td-add_column {
+	border-left: 0px !important;
+}
+
+#about_dblite_data {
+	margin: 10px 20px 10px 45px;
+	height: 260px;
+	position: relative;
+}
+
+#about_dblite_data .dblite_forum {
+	position: absolute;
+	bottom: 0px;
+}
+
+.refresh_ddl_btn, .refresh_info_btn,
+.refresh_table_index, .refresh_table_column,
+.table_data_refresh, .refresh_connection {
+	background-image: url(../images/icons/refresh-16.png) !important;
+}
+
+.user_logout {
+	background-image: url(../images/icons/logout-16.png) !important;
+}
+
+.user_settings {
+	background-image: url(../images/icons/user-account-16.png) !important;
+}
+
+.copy_cell_to_clipboard, .copy_rows_to_clipboard {
+	background-image: url(../images/icons/clipboard-16.png) !important;
+}
+
+.loading_icon {
+	background-image : url(../images/icons/loading-16.gif) !important;
+}
+
+.explorer_loading {
+	background-image : url(../images/icons/loading-105.gif)	 !important;
+	width: 59px !important;
+	height: 12px !important;
+}
+
+.destroy_session {
+	background-image : url(../images/icons/stoptwo-16.png) !important;
+}
+
+.x-form-field-wrap .x-form-spinner-trigger {
+	background: url(../images/form/spinner.gif) no-repeat !important;
+}
+
+.stop_auto_refresh {
+	background-image : url(../images/icons/stoptwo-16.png) !important;
+}

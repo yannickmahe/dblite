@@ -1,0 +1,31 @@
+#<IfModule mod_rewrite.c>
+#    RewriteEngine On
+#
+#    AddType application/javascript;charset=UTF-8 .jgz
+#    AddEncoding gzip .jgz
+#
+#
+#    AddType text/css .cgz
+#    AddEncoding gzip .cgz
+#
+#    RewriteCond %{REQUEST_FILENAME} .js$
+#    RewriteCond %{REQUEST_FILENAME}.jgz -f
+#    RewriteRule ^(.*)$  $1.jgz [QSA,L]
+#    
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteCond %{REQUEST_FILENAME} !-f
+#    RewriteRule ^t/(.*)$ test.php?tester=$1 [QSA,L]
+#
+#    RewriteCond %{REQUEST_FILENAME} .css$
+#    RewriteCond %{REQUEST_FILENAME}.cgz -f
+#    RewriteRule ^(.*)$  $1.cgz [QSA,L]
+#
+#</IfModule>
+
+#php_flag  log_errors    on
+
+#AuthType Basic
+#AuthUserFile /home/manusis/dev.dblite.com/.htpasswd
+#AuthName "Members Area"
+#require valid-user
+
