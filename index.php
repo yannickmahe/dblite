@@ -1,5 +1,5 @@
 <?php
-	$dev = false;
+	$dev = true;
 	if($dev) {
 		$app_root = realpath(__FILE__);
 		$app_root = dirname($app_root);
