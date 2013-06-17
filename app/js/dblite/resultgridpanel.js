@@ -243,7 +243,24 @@ Ext.extend(Dbl.ResultGridPanel, Ext.grid.GridPanel, {
 				disabled: Ext.getCmp('result_tab_' + grid.gridindex).autorefresh_lap ? true : false,
 				listeners: {
 					click: function(baseItem, el) {
-						Dbl.Utils.showTBDMsg();
+
+						rowData = grid.getStore().getAt(rowIndex).data;
+						
+						rowDataArray = [];
+
+						for(var property in rowData){
+							rowDataArray[rowData.length] = property;
+						}
+
+						console.log(rowDataArray);
+
+						Ext.MessageBox.show( {
+							title : 'Message',
+							msg : Messages.getMsg('content_copied', ['toto']),
+							buttons : Ext.Msg.OK,
+							animEl: document.body,
+							icon : Ext.MessageBox.INFO
+						});
 					}
 				}
 			};

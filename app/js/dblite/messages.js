@@ -79,6 +79,9 @@ var Messages = {
 		change_email_success: 'Email changed successfully.',
 		change_username_success: 'Username changed successfully.',
 
+		// messages for result view related activites
+		content_copied: '"({1})" copied to clipboard',
+
 		// other messages
 		wait_mask: 'Wait...',
 		load_mask: 'Loading...',
